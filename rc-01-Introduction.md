@@ -135,3 +135,4 @@ Always keeping in mind
 ## Resources
  * Software and HPC Carpentry: https://software-carpentry.org/ and https://hpc-carpentry.github.io/
  * Introduction to Networking:  http://intronetworks.cs.luc.edu/current/ComputerNetworks.pdf (Chapter 1)
+ * Pacific Research Platform (PRP): http://pacificresearchplatform.org/userdocs/start/get-access/
