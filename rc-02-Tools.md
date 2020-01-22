@@ -17,8 +17,6 @@ and techniques.  We will always try to motivate and explain the "why"
 of the tools but it takes active participation and thinking. The tools
 are replaceable, the concepts and techniques endure.
 
-![Styles of Compute](resources/styles-of-compute.jpg "Styles of Compute")
-
 ### OnDemand
 
 ### Gitlab
