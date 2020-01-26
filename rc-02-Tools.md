@@ -34,17 +34,18 @@ Currently the Teaching Cluster provides the following via Open OnDemand:
  * Web based RStudio Server for R. https://rstudio.com/products/rstudio/#rstudio-server
  * Web based Visual Studio Code IDE for advanced editing. https://github.com/Microsoft/vscode
 
-To setup the OnDemand Jupyter Lab environment follow the following steps: 
+To setup the OnDemand Jupyter Lab environment complete the steps
+detailed in the following screenshots:
 
 Navigate to https://ondemand.rnet.missouri.edu and Login.  `Click
-Interactive`.
+Interactive Apps`.
 ![OnDemand](resources/OnDemand-01-Main.png "Click Interactive") `Click
 Jupyter
 Lab`
 ![OnDemand Jupyter Lab Setup](resources/OnDemand-02-Interactive_LI.jpg "Click Jupyter Lab") `Scroll
 Down`
 ![OnDemand Jupyter Lab Setup](resources/OnDemand-03-NewLab.png "Scroll Down") `Change
-Settings: Include Bash Kernal, 2 Hours, 2 Cores, 2 GB`; `Click
+Settings: Select 'Include Bash Kernel', 2 Hours, 2 Cores, 2 GB`; `Click
 Launch`
 ![OnDemand Jupyter Lab Setup](resources/OnDemand-04-NewLabSettings_LI.jpg "Change Settings") Wait
 20 or more
@@ -61,20 +62,21 @@ Lab
 A Command Line Interface (CLI), or terminal, is a way of interacting
 with a system and dates back to the earliest of computing
 machines. Commands are entered on a keyboard, the computer computes,
-and the results are displayed. Although this method requires one of
-the lowest bandwith to connect to a machine, it provides the highest
-"Connection" with the machine.
+and the results are displayed. Although this method requires very low
+bandwith to communicate to a machine, it provides the highest
+"connection" with the machine.
 
-The Secure Shell (ssh) will be the primary way to access the Clark
-Teaching Cluster during the semester and should be used when ever
-possible.  Use of the OnDemand and Jupyter Lab file management
-capabilities will only make it more difficult in the long run to use
-the system.  We will now go over how to setup the OnDemand.  There is
-detailed instructions below followed by a screen capture of an example
-session.
+A Secure Shell (ssh) session will be the primary way to access and
+interact with the Clark Teaching Cluster during the semester and
+should be used when ever possible.  Use of the OnDemand and Jupyter
+Lab file management capabilities will only make it more difficult in
+the long run to use the system.  We will now go over how to setup the
+OnDemand.  There are detailed instructions below followed by a screen
+capture of an example session.  Please be sure to replace login
+information with your own.
 
 To setup the Shell go to https://ondemand.rnet.missouri.edu and
-navigate to `Clusters` > `_Clark Shell Access` and complete the following.
+navigate to `Clusters` > `_Clark Shell Access` or use the direct URL https://ondemand.rnet.missouri.edu/pun/sys/shell/ssh/clark.rnet.missouri.edu and complete the following:
  * If asked `Are you sure you want to continue connecting (yes/no)?`
    answer `yes` (just `y` will not work).
  * You should see a password prompt with your Pawprint in the beginning.
@@ -124,47 +126,25 @@ The key's randomart image is:
 ```
 Please note the "randomart" is *not* your ssh key.
 
-We now need to allow access to Clark by OnDemand by adding the newly created keys to the `.ssh/authorized_keys` file.
+We now need to allow access to Clark by OnDemand by adding the public key of the newly created key to the `.ssh/authorized_keys` file.
  * Copy the secure shell public key to the `authorized_keys` file in the `.ssh/` folder
  ```
 cp -v .ssh/id_rsa.pub .ssh/authorized_keys
  ```
  * Secure the file by changing the permissions to be only readable and writable by your user.
  ```
-chmod 600 .ssh/authorized_keys`
+chmod 600 .ssh/authorized_keys
  ```
 
-The complete session can be seen below.
+The complete session:
 ```
-[middelkoopt@clark-r630-login-node907 ~]$ ssh-keygen
-Generating public/private rsa key pair.
-Enter file in which to save the key (/home/middelkoopt/.ssh/id_rsa):
-Enter passphrase (empty for no passphrase):
-Enter same passphrase again:
-Your identification has been saved in /home/middelkoopt/.ssh/id_rsa.
-Your public key has been saved in /home/middelkoopt/.ssh/id_rsa.pub.
-The key fingerprint is:
-SHA256:iZhVMCA+eDhljPMKa8pKJNlY3XbJjxAkwVr5FzFgEQg middelkoopt@clark-r630-login-node907
-The key's randomart image is:
-+---[RSA 2048]----+
-| oEo+*X=+.       |
-|o*.o=+ =.o       |
-|+o=o..= +.       |
-|.Bo. =.+.+       |
-|=+. o ..S .      |
-|=.               |
-|+.               |
-|o.               |
-|o                |
-+----[SHA256]-----+
 [middelkoopt@clark-r630-login-node907 ~]$ cp -v .ssh/id_rsa.pub .ssh/authorized_keys
 ‘.ssh/id_rsa.pub’ -> ‘.ssh/authorized_keys’
 [middelkoopt@clark-r630-login-node907 ~]$ chmod 600 .ssh/authorized_keys
-[middelkoopt@clark-r630-login-node907 ~]$ cat .ssh/id_rsa.pub
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCvaX8GqRmO4G/zc/34wwvthL5sBqWPu4CAkKQunK5oLtYas+5XvGkztsm9pASis8PlICEKQc3QdZ4lYyXru66nvTggTFpyDCdQwzb8RAEU3YlTbeJqPQDaKHccOsexKNxx/4zLmYkOb3eESHEkiQF1v4lr7i/7/mwwNDlqD7+g+AB3Mju2AvHBsQRRzjJN9JAX9WWljj9smrosCkZBrj6Oq3eOXj1am8jOJSdQElOqSkvDUMR3UUi9xY+mWDTwGiOQLqFlGYVUK6EFNFZgmsp8kI0SaDK8wpCDw9X8QxvhFdUeEpqkCV6qMz/IAObG9UfKgbLbJZSwGA7UHTx+eYDx middelkoopt@clark-r630-login-node907
 [middelkoopt@clark-r630-login-node907 ~]$
-
 ```
+
+A screen capture of the above directions can be seen below.
 
 `Clusters > _Clark Shell Access`
 ![OnDemand Shell](resources/OnDemand-06-Clark.png "Launch Clark Shell")
@@ -174,6 +154,4 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCvaX8GqRmO4G/zc/34wwvthL5sBqWPu4CAkKQunK5o
 ### Gitlab
 
 ### Canvas (Assignments)
-
-### Authentication (Secure Shell Keys)
 
