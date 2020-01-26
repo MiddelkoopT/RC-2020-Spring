@@ -153,5 +153,19 @@ A screen capture of the above directions can be seen below.
 
 ### Gitlab
 
+Gitlabs is a source code management and project management tool based
+around the `git` (https://git-scm.com/) distributed version control
+system.
+
+We will login (on campus or using a VPN) to
+https://gitlab.missouri.edu and allow access (via the secure shell key
+generated in OnDemand) by you on Clark and clone (copy) the class repository.
+
 ### Canvas (Assignments)
+
+
+## Reading
+ * Pro Git (https://git-scm.com/book/en/v2) Chapters 1 (except 1.5), 2, 3, 5, (6 Optional)
+ * GitLab Flavored Markdown (https://docs.gitlab.com/ee/user/markdown)
+ * GitHub: How not to lose your entire analysis! https://unr-omics.readthedocs.io/en/latest/git_lesson.html
 
