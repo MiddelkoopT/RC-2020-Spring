@@ -6,7 +6,7 @@ Material Copyright 2017-2019 by Timothy Middelkoop. Source code
 licensed under the Apache License, Version 2.0. Documentation licensed
 under CC by SA 3.0.
 
-## Tools
+## Tool Setup
 
 This class is approached from two directions.  Concepts and Tools.  It
 takes a tool-first approach not because they are more important, they
