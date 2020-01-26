@@ -161,6 +161,29 @@ We will login (on campus or using a VPN) to
 https://gitlab.missouri.edu and allow access (via the secure shell key
 generated in OnDemand) by you on Clark and clone (copy) the class repository.
 
+Complete the following steps:
+ * Login to https://gitlab.missouri.edu/
+ * Setup your profile (click the `profile icon` on the top right and select `Settings`) or use https://gitlab.missouri.edu/profile
+ * Setup your ssh keys (in settings click `ssh keys`) or use https://gitlab.missouri.edu/profile/keys
+ * Login to Clark and copy your Clark machine public key (`~/.ssh/id_rsa.pub`) into the `Key` box on Gitlab.  The key starts with `ssh-rsa` and ends with the `@clark-r630-login-node907` hostname.  The steps are broken down as follows:
+   * Run the command `cat ~/.ssh/id_rsa.pub`
+```
+[middelkoopt@clark-r630-login-node907 ~]$ cat .ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCvaX8GqRmO4G/zc/34wwvthL5sBqWPu4CAkKQunK5oLtYas+5XvGkztsm9pASis8PlICEKQc3QdZ4lYyXru66nvTggTFpyDCdQwzb8RAEU3YlTbeJqPQDaKHccOsexKNxx/4zLmYkOb3eESHEkiQF1v4lr7i/7/mwwNDlqD7+g+AB3Mju2AvHBsQRRzjJN9JAX9WWljj9smrosCkZBrj6Oq3eOXj1am8jOJSdQElOqSkvDUMR3UUi9xY+mWDTwGiOQLqFlGYVUK6EFNFZgmsp8kI0SaDK8wpCDw9X8QxvhFdUeEpqkCV6qMz/IAObG9UfKgbLbJZSwGA7UHTx+eYDx middelkoopt@clark-r630-login-node907
+[middelkoopt@clark-r630-login-node907 ~]$
+``` 
+   * Copy the key from the terminal, your key should look like the following:
+```
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCvaX8GqRmO4G/zc/34wwvthL5sBqWPu4CAkKQunK5oLtYas+5XvGkztsm9pASis8PlICEKQc3QdZ4lYyXru66nvTggTFpyDCdQwzb8RAEU3YlTbeJqPQDaKHccOsexKNxx/4zLmYkOb3eESHEkiQF1v4lr7i/7/mwwNDlqD7+g+AB3Mju2AvHBsQRRzjJN9JAX9WWljj9smrosCkZBrj6Oq3eOXj1am8jOJSdQElOqSkvDUMR3UUi9xY+mWDTwGiOQLqFlGYVUK6EFNFZgmsp8kI0SaDK8wpCDw9X8QxvhFdUeEpqkCV6qMz/IAObG9UfKgbLbJZSwGA7UHTx+eYDx middelkoopt@clark-r630-login-node907 
+```
+   * Paste it into the `Key` box on Gitlab.
+   * Click `Add Key`
+
+Screenshots are below:
+![GitLab Settings](resources/GitLab-01-Settings_LI.jpg "GitLab Settings")
+![GitLab SSH Key](resources/GitLab-02-ssh-key_LI.jpg "GitLab SSH Key")
+
+
 ### Canvas (Assignments)
 
 
