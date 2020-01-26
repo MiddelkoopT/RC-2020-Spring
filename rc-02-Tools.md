@@ -19,9 +19,24 @@ are replaceable, the concepts and techniques endure.
 
 ### OnDemand
 
-### Gitlab
+Navigate to https://ondemand.rnet.missouri.edu and Login.  `Click Interactive`.
+![OnDemand Main Page](resources/OnDemand-01-Main.png "Click Interactive")
+`Click Jupyter Lab`
+![OnDemand Interactive](resources/OnDemand-02-Interactive_LI.jpg "Click Jupyter Lab")
+`Scroll Down`
+![OnDemand Interactive](resources/OnDemand-03-NewLab.png "Scroll Down")
+`Change Settings: Include Bash Kernal, 2 Hours, 2 Cores, 2 GB`; `Click Launch`
+![OnDemand Interactive](resources/OnDemand-04-NewLabSettings_LI.jpg "Change Settings")
+Wait 20 or more minutes.
+![OnDemand Interactive](resources/OnDemand-05-Wait.png "Wait 20 min")
+`Connect to Jupyter`
+![OnDemand Interactive](resources/OnDemand-08-Connect_LI.jpg "Click Connect to Jupyter")
+Jupyter Lab
+![OnDemand Interactive](resources/OnDemand-09-JupyterLab.png "Enjoy")
 
 ### Clark (CLI)
+
+### Gitlab
 
 ### Canvas (Assignments)
 
