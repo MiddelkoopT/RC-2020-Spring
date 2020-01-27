@@ -301,11 +301,11 @@ This exercise will allow you to practice creating repositories and cloning them 
 
 Complete the following steps:
  * Create a new class git assignments repository with the name
-   `rc-pawprint-First-Last` and grant `Reporter` access to the
-   instructor `@middelkoopt`.  Replace `pawprint` with your login id
-   (PawPrint) in all lower case and `Frist` and `Last` with your first
-   and last name, capitalized.
- * Clone the repository in your `~/projects` folder on Clark.
+   `rc-pawprint-First-Last`.
+ * Grant `Reporter` access to the instructor `@middelkoopt`.  Replace
+   `pawprint` with your login id (PawPrint) in all lower case and
+   `Frist` and `Last` with your first and last name, capitalized.
+ * Using a Secure Shell to connect to Clark, clone the repository in your `~/projects` folder on Clark.
  * Paste your new git assignments repository URL (in the form
    `git@gitlab.missouri.edu:pawprint/rc-pawprint-First-Last.git`) in
    the assignment section (02-Git) of the class website.  You can find
