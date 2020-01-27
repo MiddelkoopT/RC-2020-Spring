@@ -184,7 +184,94 @@ Screenshots are below:
 ![GitLab SSH Key](resources/GitLab-02-ssh-key_LI.jpg "GitLab SSH Key")
 
 
-### Canvas (Assignments)
+### Git
+
+Git is a distributed version control system and we will be using it
+exclusively throughout the course to manage all work-products for the
+assignments (mercerizes and assessments) and project.  We will be
+using git primarily through the command line and use GitLabs for
+project management aspects.  Read the "Pro Git" material assigned in
+readings for more information and context.
+
+To get started we will setup a project space on Clark and "clone" the
+class repository
+(`git@gitlab.missouri.edu:middelkoopt/RC-2020-Spring`) on Clark from
+GitLab (https://gitlab.missouri.edu).  This will use the key generated
+and associated with your GitLab account in the previous sections.  To
+complete this do the following (complete transcript follows):
+ * Login to `clark.rnet.missouri.edu` via OnDemand
+   (https://ondemand.rnet.missouri.edu) or another Secure Shell
+   client.
+ * Since this is a new environment create, if it does not already
+   exist, a `projects` folder in the root of your home directory.
+ ```
+ cd ~
+ mkdir projects
+ cd projects
+ pwd
+ ```
+ * Clone the course material repository and verify the contents (you may need to accept the host ssh key).
+ ```
+cd ~/projects
+git clone git@gitlab.missouri.edu:middelkoopt/RC-2020-Spring 
+cd RC-2020-Spring
+ls -l
+ ```
+ * Clone the class repository, you must first request permission to access.
+ ```
+cd ~/projects
+git clone git@gitlab.missouri.edu:middelkoopt/RC-2020-Spring-Class
+cd RC-2020-Spring-Class
+ls -l
+ ```
+
+The complete session transcript follows:
+```
+[middelkoopt@clark-r630-login-node907 ~]$ cd ~
+[middelkoopt@clark-r630-login-node907 ~]$ mkdir projects
+[middelkoopt@clark-r630-login-node907 ~]$ cd projects/
+[middelkoopt@clark-r630-login-node907 projects]$ pwd
+/home/middelkoopt/projects
+[middelkoopt@clark-r630-login-node907 projects]$ cd ~/projects
+[middelkoopt@clark-r630-login-node907 projects]$ git clone git@gitlab.missouri.edu:middelkoopt/RC-2020-Spring
+Cloning into 'RC-2020-Spring'...
+The authenticity of host 'gitlab.missouri.edu (128.206.56.2)' can't be established.
+RSA key fingerprint is SHA256:HsRdYvM4IB/vhgqrp7NORADa4era62HWs0Zxg2AikFo.
+RSA key fingerprint is MD5:5a:3d:8e:2c:4d:f2:f7:b8:4a:4c:82:71:95:1a:10:43.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'gitlab.missouri.edu,128.206.56.2' (RSA) to the list of known hosts.
+remote: Enumerating objects: 68, done.
+remote: Counting objects: 100% (68/68), done.
+remote: Compressing objects: 100% (48/48), done.
+remote: Total 68 (delta 22), reused 64 (delta 18)
+Receiving objects: 100% (68/68), 3.88 MiB | 0 bytes/s, done.
+Resolving deltas: 100% (22/22), done.
+[middelkoopt@clark-r630-login-node907 projects]$ ls -l
+total 2
+drwxrwxr-x. 4 middelkoopt middelkoopt 7 Jan 27 13:23 RC-2020-Spring
+[middelkoopt@clark-r630-login-node907 projects]$ cd RC-2020-Spring
+[middelkoopt@clark-r630-login-node907 RC-2020-Spring]$ ls -l
+total 15
+-rw-rw-r--. 1 middelkoopt middelkoopt 3842 Jan 27 13:23 rc-01-Introduction.md
+-rw-rw-r--. 1 middelkoopt middelkoopt 9402 Jan 27 13:23 rc-02-Tools.md
+-rw-rw-r--. 1 middelkoopt middelkoopt 2577 Jan 27 13:23 ReadMe.md
+drwxrwxr-x. 2 middelkoopt middelkoopt   18 Jan 27 13:23 resources
+[middelkoopt@clark-r630-login-node907 RC-2020-Spring]$ cd ~/projects
+[middelkoopt@clark-r630-login-node907 projects]$ git clone git@gitlab.missouri.edu:middelkoopt/RC-2020-Spring-Class
+Cloning into 'RC-2020-Spring-Class'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0)
+Receiving objects: 100% (3/3), done.
+[middelkoopt@clark-r630-login-node907 projects]$ cd RC-2020-Spring-Class
+[middelkoopt@clark-r630-login-node907 RC-2020-Spring-Class]$ ls -l
+total 1
+-rw-rw-r--. 1 middelkoopt middelkoopt 128 Jan 27 13:23 ReadMe.md
+[middelkoopt@clark-r630-login-node907 RC-2020-Spring-Class]$
+```
+
+
 
 
 ## Reading
