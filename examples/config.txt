@@ -1,0 +1,20 @@
+# ~/.ssh/config
+
+## Forced across all HOST entries
+Protocol 2
+HashKnownHosts no
+ForwardX11 no
+
+IdentityFile ~/.ssh/id_rsa
+
+HOST lewis.rnet.missouri.edu clark.rnet.missouri.edu
+  User middelkoopt
+  StrictHostKeyChecking yes
+  CheckHostIP yes
+  ForwardAgent yes
+
+## Default
+HOST *
+  StrictHostKeyChecking no
+  PasswordAuthentication yes
+  ForwardAgent no
