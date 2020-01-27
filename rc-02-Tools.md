@@ -295,7 +295,7 @@ git config --global user.email "MiddelkoopT@missouri.edu"
 
 ## Exercises
 
-### 02-Git
+### E02-Git
 
 This exercise will allow you to practice creating repositories and cloning them within your Clark account:
 
