@@ -193,6 +193,8 @@ using git primarily through the command line and use GitLabs for
 project management aspects.  Read the "Pro Git" material assigned in
 readings for more information and context.
 
+#### Clone Git Repositories.
+
 To get started we will setup a project space on Clark and "clone" the
 class repository
 (`git@gitlab.missouri.edu:middelkoopt/RC-2020-Spring`) on Clark from
@@ -203,14 +205,14 @@ complete this do the following (complete transcript follows):
    (https://ondemand.rnet.missouri.edu) or another Secure Shell
    client.
  * Since this is a new environment create, if it does not already
-   exist, a `projects` folder in the root of your home directory.
+   exist, a `projects` folder in the root of your home directory on clark with the following commands:
  ```
- cd ~
- mkdir projects
- cd projects
- pwd
+cd ~
+mkdir projects
+cd projects
+pwd
  ```
- * Clone the course material repository and verify the contents (you may need to accept the host ssh key).
+ * Clone the course material repository and verify the contents (you may need to accept the host ssh key) with the following commands:
  ```
 cd ~/projects
 git clone git@gitlab.missouri.edu:middelkoopt/RC-2020-Spring 
@@ -271,7 +273,47 @@ total 1
 [middelkoopt@clark-r630-login-node907 RC-2020-Spring-Class]$
 ```
 
+#### Configure git
 
+We will now configure global settings for git for your name and email
+address.  These will apply to all repositories on Clark unless
+overridden by local settings.  This information is used when using the
+git tools to work with the repository. You can find more information
+about configuration setting by running the command `man git config`.
+
+To set your personal information, omplete the following steps using
+your own personal information within the double quotes. Both commands
+return silent upon success.
+ * Set your Name: 
+```
+git config --global user.name "Timothy Middelkoop"
+```
+ * Set your email address:
+```
+git config --global user.email "MiddelkoopT@missouri.edu"
+```
+
+## Exercises
+
+### E02-Git
+
+This exercise will allow you to practice creating repositories and cloning them within your Clark account:
+
+Complete the following steps:
+ * Create a new class git assignments repository with the name
+   `rc-pawprint-First-Last`.
+ * Grant `Reporter` access to the instructor `@middelkoopt`.  Replace
+   `pawprint` with your login id (PawPrint) in all lower case and
+   `Frist` and `Last` with your first and last name, capitalized.
+ * Using a Secure Shell to connect to Clark, clone the repository in your `~/projects` folder on Clark.
+ * Paste your new git assignments repository URL (in the form
+   `git@gitlab.missouri.edu:pawprint/rc-pawprint-First-Last.git`) in
+   the assignment section (02-Git) of the class website.  You can find
+   this in the "Project Overview > Details" section of the project on
+   GitLabs by pressing the `Clone` button and pressing the`clone with SSH`
+   copy URL button (or copy the text) to the right of the repository URL.
+
+![GitLab RepoURL](resources/GitLab-03-RepoURL_LI.jpg "GitLab SSH Key")
 
 
 ## Reading
