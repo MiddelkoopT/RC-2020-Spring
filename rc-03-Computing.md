@@ -53,6 +53,7 @@ All this is all brought together by **teams** with
 
 ## Reading
  * "High Performance Computing: Modern Systems and Practices" (Chapter 2, HPC Architecture 1; Chapter 3, Commodity Clusters )
+ * "OAC Vision & Blueprint: Overview and Computational Ecosystem" https://www.nsf.gov/cise/oac/vision/blueprint-2019/nsf-aci-blueprint-v10-508.pdf 
 
 ## Discussion and Discovery
  * Flynn’s Taxonomy
