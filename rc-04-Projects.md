@@ -44,12 +44,12 @@ capabilities, which are as follows:
 1. Projects: A Project is the basic unit for which most of the real
    functionality is contained, divided by project.  A project contains
    the following elements:
-   2. Git Repository (source and documentation)
-   2. Issues
-   2. Milestones
-   2. Continuous Integration and Continuous Deployment.
-   2. Documentation (Wiki) and Wiki's.
-   2. Metrics
+   1. Git Repository (source and documentation)
+   1. Issues
+   1. Milestones
+   1. Continuous Integration and Continuous Deployment.
+   1. Documentation (Wiki) and Wiki's.
+   1. Metrics
 1. Groups: A number of projects can be combined together as a group.
    Good for larger projects that may contain multiple repositories or
    larger groups such as research labs.  Groups contain some of the
