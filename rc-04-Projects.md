@@ -6,9 +6,9 @@ Material Copyright 2017-2019 by Timothy Middelkoop. Source code
 licensed under the Apache License, Version 2.0. Documentation licensed
 under CC by SA 3.0.
 
-## Projects
-
 > "If it is not in git, it did not happen."
+
+## Projects
 
 Managing a research effort and scientific or engineering workflows is
 a lot like managing a project.  Many times a research effort will be
