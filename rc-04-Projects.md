@@ -68,6 +68,7 @@ distributed manner in a secure way (verifiable and integrity).  At
 it's heart is just a series of "changes" with a tools to manage
 workflows.  A git repository is a standalone database that contains
 the following concepts (covered in the text):
+1. Blobs (files)
 1. Commits (changes)
 1. Branches (trees)
 1. Files (checkout)
