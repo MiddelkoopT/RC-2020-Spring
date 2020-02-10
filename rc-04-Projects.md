@@ -91,7 +91,7 @@ etc. to allow for easier navigation through a project.  The
 authoritative reference for GitLab flavored markdown can be found at
 the following website: https://docs.gitlab.com/ee/user/markdown.html
 
-### Exercise 04-Markdown
+### Exercise E04-Markdown
 The purpose of this exercise is to familiarize yourself with basics of
 Git and GitLab and to provide a basic student profile.  This exercise
 will also familiarize the student with how to submit exercises,
