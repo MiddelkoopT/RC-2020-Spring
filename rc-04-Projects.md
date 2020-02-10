@@ -78,7 +78,6 @@ the following concepts (covered in the text):
 
 
 ## Markdown
-
 Markdown is a human readable markup language that is easy to use and
 similar in style to programming.  The Markdown format is visually
 similar to the rendered results and has eclipsed many of it's
@@ -92,8 +91,30 @@ etc. to allow for easier navigation through a project.  The
 authoritative reference for GitLab flavored markdown can be found at
 the following website: https://docs.gitlab.com/ee/user/markdown.html
 
+### Exercise 04-Markdown
+The purpose of this exercise is to familiarize yourself with basics of
+Git and GitLab and to provide a basic student profile.  This exercise
+will also familiarize the student with how to submit exercises,
+assessments, and projects and how feedback will be provided. 
+
+The goal of this exercise is to write your profile in the `ReadMe.md`
+if your course repository.  Please consider the following points.
+ 1. Place the profile in the `ReadMe.md` file noting the upper/lower
+    case of the file (not `readme.md` or `README.md`).
+ 2. Include an image that is
+    1. stored in the repository (uploaded), and
+	2. preferably your profile picture.
+ 3. You may use the GitLab editor and edit on the 'master' branch.
+ 4. Post the repository URL (the `clone with ssh` URL under clone) and
+    the long commit ID.  Use the `Copy Commit SHA` on the proper
+    commit in the "`commits` section of the `Repository` section of
+    your project.  Please note that the example commit
+    `542720c4aa671f6267ff211d110cd81deb06d177` is a long commit id,
+    and `542720c4` is the short commit ID.
+
 ## Reading
- * HPC Carpentry: Linux Shell (https://hpc-carpentry.github.io/hpc-shell/) sections 1-4
+ * HPC Carpentry: Linux Shell
+   (https://hpc-carpentry.github.io/hpc-shell/) sections 1-4
  * Pro Git (https://git-scm.com/book/en/v2) Chapters 1 (except 1.5), 2, 3, 5, (6 Optional)
  * GitLab Markdown https://docs.gitlab.com/ee/user/markdown.html
  * GitLab Issues https://docs.gitlab.com/ee/user/project/issues/
