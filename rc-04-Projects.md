@@ -100,7 +100,14 @@ assessments, and projects and how feedback will be provided.
 The goal of this exercise is to write your profile in the `ReadMe.md`
 if your course repository.  Please consider the following points.
  1. Place the profile in the `ReadMe.md` file noting the upper/lower
-    case of the file (not `readme.md` or `README.md`).
+    case of the file (not `readme.md` or `README.md`). The profile should
+    contain the following information:
+    1. Name:
+    2. How you wish to be referred by:
+    2. Department:
+    3. Degree/Standing (B.S.+ M.S.; M.S.; Ph.D Student; Ph.D. Candidate; Faculty; Staff; Other)
+    4. Degree focus area:
+    5. About you (optional): something trivial/interesting about yourself.
  2. Include an image that is
     1. stored in the repository (uploaded), and
 	2. preferably your profile picture.
