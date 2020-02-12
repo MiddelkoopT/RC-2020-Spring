@@ -53,3 +53,7 @@ A secure shell client (ssh) is required. The following ssh clients are recommend
  * R Language https://www.r-project.org/
  * R Tutorial http://www.cyclismo.org/tutorial/R/
  * Julia Docs https://docs.julialang.org
+
+## Readings
+ * "OAC Vision & Blueprint: Overview and Computational Ecosystem" https://www.nsf.gov/cise/oac/vision/blueprint-2019/nsf-aci-blueprint-v10-508.pdf
+ * Roofline Model: https://crd.lbl.gov/departments/computer-science/PAR/research/roofline/ 
