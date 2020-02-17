@@ -6,9 +6,9 @@ Material Copyright 2017-2019 by Timothy Middelkoop. Source code
 licensed under the Apache License, Version 2.0. Documentation licensed
 under CC by SA 3.0.
 
-> "If it is not in git, it did not happen."
+## Managing Research
 
-## Projects
+> "If it is not in git, it did not happen."
 
 Managing a research effort and scientific or engineering workflows is
 a lot like managing a project.  Many times a research effort will be
@@ -35,7 +35,15 @@ For all research and projects the first steps should be the following:
  6. Work as a Team
  7. Profit.
 
-## GitLab
+## Reading
+ * Pro Git (https://git-scm.com/book/en/v2) Chapters 1 (except 1.5), 2, 3, 5, (6 Optional)
+ * GitLab Markdown https://docs.gitlab.com/ee/user/markdown.html
+ * GitLab Issues https://docs.gitlab.com/ee/user/project/issues/
+ * GitLab Issue Boards https://docs.gitlab.com/ee/user/project/issue_board.html
+
+## Lessons
+
+### GitLab
 
 GitLab (https://gitlab.com) and local GitLab websites
 (https://gitlab.missouri.edu) contain a number of tools and
@@ -60,7 +68,7 @@ capabilities, which are as follows:
    different permissions to facilitate a large number of workflows.
 
 
-## Git
+### Git
 
 Git is a distributed source control management system.  It is used to
 manage source files, through changes, in a decentralized and
@@ -77,7 +85,7 @@ the following concepts (covered in the text):
 1. Remotes (repositories)
 
 
-## Markdown
+### Markdown
 Markdown is a human readable markup language that is easy to use and
 similar in style to programming.  The Markdown format is visually
 similar to the rendered results and has eclipsed many of it's
@@ -91,7 +99,7 @@ etc. to allow for easier navigation through a project.  The
 authoritative reference for GitLab flavored markdown can be found at
 the following website: https://docs.gitlab.com/ee/user/markdown.html
 
-### Exercise E04-Markdown
+#### Exercise E04-Markdown
 The purpose of this exercise is to familiarize yourself with basics of
 Git and GitLab and to provide a basic student profile.  This exercise
 will also familiarize the student with how to submit exercises,
@@ -118,14 +126,6 @@ if your course repository.  Please consider the following points.
     your project.  Please note that the example commit
     `542720c4aa671f6267ff211d110cd81deb06d177` is a long commit id,
     and `542720c4` is the short commit ID.
-
-## Reading
- * HPC Carpentry: Linux Shell
-   (https://hpc-carpentry.github.io/hpc-shell/) sections 1-4
- * Pro Git (https://git-scm.com/book/en/v2) Chapters 1 (except 1.5), 2, 3, 5, (6 Optional)
- * GitLab Markdown https://docs.gitlab.com/ee/user/markdown.html
- * GitLab Issues https://docs.gitlab.com/ee/user/project/issues/
- * GitLab Issue Boards https://docs.gitlab.com/ee/user/project/issue_board.html
 
 ## References
  * GitLab https://gitlab.com
