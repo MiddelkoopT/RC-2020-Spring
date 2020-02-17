@@ -8,9 +8,8 @@ under CC by SA 3.0.
 
 ## Command Line Interface (CLI)
 
-> "Vísteme despacio que estoy de prisa" 
-> "Dress me slowly, for I'm in a hurry"
-> - Napoleon Bonaparte
+> "Vísteme despacio que estoy de prisa" ("Dress me slowly, for I'm in a hurry")
+\- Napoleon Bonaparte
 
 
 ## Objectives
