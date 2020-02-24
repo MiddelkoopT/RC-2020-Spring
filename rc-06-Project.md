@@ -48,87 +48,129 @@ a good grade.  Careful attention to *detail* and *instructions* is
 required.
 
 Final project requirements change based on the semesters work, changes
-in technologies and methods, and ongoing feedback.
+in technologies and methods, and ongoing feedback.  This module will
+contain the latest project and project proposal requirements and will
+be constantly updated here. Look at the get repository changes for
+updates.  The final project requirements will posted a few weeks
+before the project is due.
+
+The "Benchmark" chapter in the reading contains many of the elements
+that will required in the class project and should be considered in
+this context in addition to the actual benchmarking material.
 
 ## Reading
-
 * "High Performance Computing: Modern Systems and Practices" (Chapter 4, Benchmarking)
 
-Early systems were connected to a typewriter for input and a line
-printer for output [HW: verification and citation needed].  Today this
-has changed very little and when it comes to most interactions remains
-the same.  The only real change is the adoption of monitors and the
-adoption of Unicode using UTF-8 over ASCII (which is backwards
-compatible).
 
-```
-command
-```
-and
-```
-response
-```
+## Project Proposal
 
-The spirit of the "Unix philosophy" is "Do One Thing and Do It Well,"
-and such Unix and Linux is just a collection of small commands that,
-when put together, make the whole.  In this module we will be
-discussing the general framework, not the specifics of the tools, and
-how it is all put together.
+As with the entire project this, is a work in progress and a
+collaborative process and will evolve over time.
 
-### Compute
+Please ensure that your project repository has been created and made
+available and is in the form `rc-project-${SSO}-${FIRST}-${LAST}, all
+lower case except your first and last name, which should be
+capitalized.  You must share your project with me (@middelkoopt) with
+"Reporter" privileges.
 
-This framework requires different programs (the `process`) to run and
-interact in a multi-user environment in order to accomplish some
-useful work.
+Place your proposal in the root of the project as Proposal.md using
+proper markdown format.  You may use the gitlabs editor to edit it.
+It should contain the following:
 
-The *process* is the fundamental unit of "compute."
+ * Title of the project
+ * Abstract of the research (what is the research question being asked)
+ * Source of the data (Please try to find the original source of the data)
+   * Name
+   * Short Description
+   * URL of the website
+   * URL of the data to download
+ * Brief overview of the workflow
+ * Brief overview of the analysis (tools used) or study (scalability
+   study, parameter sweep, sensitivity study etc.) and what you wish
+   to accomplish
 
-> "In the beginning there was `init`"
-
-The init process (magically, and now using systemd) is responsible for
-running all the programs to setup and run the system.
-
-A program is launched, runs, and then terminates.  Each process has a
-number (called a `pid`) and has a parent process and a number of child process.
-
-### Configuration
-
-Processes can get configuration information through *environment
-variables*.  Environment variables are `KEY=value` pairs and each
-process has it's own (mutable) environment.  Child process get their
-own copy of the environment, allowing for the parent to pass
-configuration information to the child.
+Please note, you may use proprietary data as part of your research but
+it cannot shared or be stored in your project unless it is public
+data.  You may do the analysis and share the results as a part of the
+project on actual data but the report cannot contain any actual data
+that would not be considered public and you must get explicit approval
+from the Data Stewart to do this.  If this is the case you must
+provide similar (possibly synthetic, preferably benchmark, data) and
+the Data Stewart must send me an email indicating their permission to
+do this.
 
 
-### Storage
+## Project
 
-The file is the fundamental unit of *storage*.  A file has a name,
-ownership, permissions, and a location.  In Linux *files* live in
-*directories* and directories are arranged into a single hierarchy of
-files starting with the *root* (`/`) folder.  Processes can access
-files either by specifying a *absolute path* starting with `/` or a
-*relative path*.  The *relative path* is a folder that starts with the
-processes *present working directory* or PWD.  Each process has a PWD
-(that can change) and children inherent the parents PWD.
+The objective of this project is to gain experience with and
+demonstrate competency in developing Scientific and Engineering
+Workflows and managing data. The project will utilize the methods and
+examples covered in the class. Using the "1,2,3, Go" system discussed
+in class the data is expected to be "3" (benchmark) and the
+computation is expected to be at least "2" (textbook) class.
 
-There are two special folders named `.` and `..`, which represent the
-current and parent directories, relative to the folder that they are
-in.
-
-### Networking
-
-In Linux communication between processes is accomplished though
-`pipes` - the *network*.  These pipes can be either local or over the
-network.  In the CLI this is most often the `stdin`, `stdout`, and
-`stderr`.  Process pass information from their `stdout` to a child's
-`stdout` (we will convently ignore `stderr`) though the use of
-*redirection*.  This information is in the form of a stream of bytes
-that is buffered between each process, and each process can run
-simultaneously.*.  Redirection also allows directing streams to and
-from files (hence the name).  In this way a number of commands can be
-chained together transforming the information along the way.
+The project will use the gitlabs `rc-project-${USER}-${FIRST}-${LAST}` git
+repository for the project and shared with "Reporter" permission to
+the instructor.
 
 
-## Reading
- * HPC Carpentry: Linux Shell
-   (https://hpc-carpentry.github.io/hpc-shell/) sections 1-4
+### Specific Instructions
+  1. The project must implement a reproducible scientific workflow
+     that runs on the Clark cluster.
+  2. The project results must be reproducible.  The project will be graded by
+     cloning the repository and following the provided instructions.  Absolute 
+     hard-coded filenames in configuration files or source code is strictly
+     prohibited.
+  3. The workflow must consist of at least a data download and/or
+     filtering step, an analysis step, and a results step in at least
+     two languages.
+  4. The workflow must be able to run multiple simultaneous analysis
+     or scenarios as SLURM jobs with the same analysis code.  At a
+     minimum it must be able to run the textbook example (small, step
+     2) and the larger analysis.
+  5. All textbook examples (small) must be included in the
+     repository with any expected output (use an example folder
+     if needed).
+  6. There must not be any large data or propriety data in the repo.
+     All large data must be public and downloaded as a part of the
+     workflow.
+  7. Use proper commits.  Commits must be logical and of appropriate
+     size with descriptive commit messages.
+  8. The workflow must be properly documented, licensed, and use
+     proper citation.  The significant use of example code is
+     permitted as long as it is sited and the licenses are compatible.
+     For the documentation,
+	 1. Provide a brief overview of the analysis.
+	 2. Document the overall workflow (data, steps, analysis)
+     3. Document each step in the process in detail (analysis, transformations).
+	 4. Document the source data and the intermediary data (the format
+        and metadata of the data between steps).
+	 5. Use of the textbook example in the documentation may be helpful.
+  9. Multiple workflows must use configuration files (`config.json`),
+     not changes in source files.
+ 10. The primary goal is to build and document a scientific workflow,
+     not to do the analysis.
+
+
+### Grading
+
+The project will be graded on the following areas:
+ 1. The utilization of git to manage the project including properly
+    formed commits and commit comments.
+ 2. Documentation of the project with a project level
+    "project/ReadMe.md" file written in "gitlabs flavored markdown" to
+    describe the files, data, and metadata.  This file should contain
+    the references to the data used in the project.
+ 3. Documentation of the project data (metadata) placed in the
+    "project/ReadMe.md" file in a "metadata" section.  If this data is
+    copied from the website then the URL must be included in the
+    document.
+ 4. The quality of the data processing and analysis.
+ 5. The quality of the code (formatting, comments, coding style etc.).
+ 6. The use of SLURM to manage the Workflow.
+
+
+## Exercise
+
+Develop a preliminary proposal and document the workflow in the
+"Benchmarking" chapter in the text.
