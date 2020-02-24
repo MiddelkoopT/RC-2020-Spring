@@ -23,18 +23,18 @@ By the end of this module students should be:
 execute commands on a High Performance Computing (HPC) cluster.
  * Familiar with the basics of the BASH shell, specifically with the
    following concepts that also apply more broadly:
-   * Paths (relative, absolute)
-   * Commands, options, and arguments.
+   * Paths (relative, absolute, `pwd`)
+   * Commands, options, and arguments
    * Environment variables (`${PATH}`, `${USER}`, `${HOME}`)
-   * Users and groups.
-   * Processes.
+   * Users, groups, and permissions
+   * Processes
    * File globbing
    * Command line expansion
    * Escaping escaping
-   * Looping and Logic
-   * `stdin`, `stdout`, `stderr`
-   * Redirection
-   * Shebang
+   * Looping and logic
+   * Redirection; `stdin`, `stdout`, `stderr`
+   * Editing files
+   * Scripting and the Shebang
 
 
 ## Background
