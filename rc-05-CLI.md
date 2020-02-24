@@ -31,9 +31,10 @@ execute commands on a High Performance Computing (HPC) cluster.
    * File globbing
    * Command line expansion
    * Escaping escaping
-   * Looping
+   * Looping and Logic
    * `stdin`, `stdout`, `stderr`
    * Redirection
+   * Shebang
 
 
 ## Background
