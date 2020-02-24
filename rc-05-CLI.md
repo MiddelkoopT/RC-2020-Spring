@@ -63,6 +63,8 @@ when put together, make the whole.  In this module we will be
 discussing the general framework, not the specifics of the tools, and
 how it is all put together.
 
+### Compute
+
 This framework requires different programs (the `process`) to run and
 interact in a multi-user environment in order to accomplish some
 useful work.
@@ -77,11 +79,16 @@ running all the programs to setup and run the system.
 A program is launched, runs, and then terminates.  Each process has a
 number (called a `pid`) and has a parent process and a number of child process.
 
+### Configuration
+
 Processes can get configuration information through *environment
 variables*.  Environment variables are `KEY=value` pairs and each
 process has it's own (mutable) environment.  Child process get their
 own copy of the environment, allowing for the parent to pass
 configuration information to the child.
+
+
+### Storage
 
 The file is the fundamental unit of *storage*.  A file has a name,
 ownership, permissions, and a location.  In Linux *files* live in
@@ -95,6 +102,8 @@ processes *present working directory* or PWD.  Each process has a PWD
 There are two special folders named `.` and `..`, which represent the
 current and parent directories, relative to the folder that they are
 in.
+
+### Networking
 
 In Linux communication between processes is accomplished though
 `pipes` - the *network*.  These pipes can be either local or over the
