@@ -119,5 +119,6 @@ chained together transforming the information along the way.
 
 
 ## Reading
+ * "High Performance Computing: Modern Systems and Practices" (Appendix B, Essential Linux)
  * HPC Carpentry: Linux Shell
    (https://hpc-carpentry.github.io/hpc-shell/) sections 1-4
