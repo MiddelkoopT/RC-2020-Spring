@@ -117,6 +117,35 @@ simultaneously.*.  Redirection also allows directing streams to and
 from files (hence the name).  In this way a number of commands can be
 chained together transforming the information along the way.
 
+## Basic Linux
+
+There are a number of good tutorials and videos online.  We use the
+HPC Carpentry website section on the Linux Shell
+(https://hpc-carpentry.github.io/hpc-shell/) sections 1-4.
+
+To get help run the `man` command with the first argument with the
+name of the command.  Many programs you can also just run the command
+with `--help`, for example `man --help`.
+
+CLI Concepts:
+* prompt/shell, path, file, program, arguments, switches
+
+Basic commands:
+* `man`, `ls`, `pwd`, `cd`, `mkdir`, `rmdir`, `mv`, `rm`, `echo`, `touch`, `cat`, `less`, `grep`, `wc`, `sort`, `gzip`
+* `git`
+* `ssh`, `wget`, `curl`, `rsync`
+* `tar`, `unzip`, `zip`
+* `exit`
+
+Redirection:
+* `<`, `>`, `>>`, `|`, 
+
+Editors:
+* `nano`, `emacs`, `vi`
+
+
+## Examples
+See the Module 4 notebooks in Jupyter for examples.
 
 ## Reading
  * "High Performance Computing: Modern Systems and Practices" (Appendix B, Essential Linux)
