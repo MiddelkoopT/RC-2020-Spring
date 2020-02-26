@@ -6,7 +6,7 @@ Material Copyright 2017-2019 by Timothy Middelkoop. Source code
 licensed under the Apache License, Version 2.0. Documentation licensed
 under CC by SA 3.0.
 
-## Tool Setup
+## Background
 
 This class is approached from two directions.  Concepts and Tools.  It
 takes a tool-first approach not because they are more important, they
@@ -16,6 +16,11 @@ had to be carefully constructed.  The tools are used to apply concepts
 and techniques.  We will always try to motivate and explain the "why"
 of the tools but it takes active participation and thinking. The tools
 are replaceable, the concepts and techniques endure.
+
+## Reading
+ * Pro Git (https://git-scm.com/book/en/v2) Chapters 1 (except 1.5), 2, 3, 5, (6 Optional)
+ * GitLab Flavored Markdown (https://docs.gitlab.com/ee/user/markdown)
+ * GitHub: How not to lose your entire analysis! https://unr-omics.readthedocs.io/en/latest/git_lesson.html
 
 ### OnDemand
 
@@ -315,9 +320,12 @@ Complete the following steps:
 
 ![GitLab RepoURL](resources/GitLab-03-RepoURL_LI.jpg "GitLab SSH Key")
 
+## Additional Resources
 
-## Reading
- * Pro Git (https://git-scm.com/book/en/v2) Chapters 1 (except 1.5), 2, 3, 5, (6 Optional)
- * GitLab Flavored Markdown (https://docs.gitlab.com/ee/user/markdown)
- * GitHub: How not to lose your entire analysis! https://unr-omics.readthedocs.io/en/latest/git_lesson.html
+Alternative Secure Shell Clients
+* MobaXterm (https://mobaxterm.mobatek.net/) for Windows, available on "Software Center" for DoIT managed machines.
+* Putty (https://the.earth.li/~sgtatham/putty/latest/w32/putty.exe ) for Windows, 
+* or hterm, the Chrome browser “Secure Shell” extension for Windows, Mac, and Chromebooks (https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo).
+* Mac users can use the built-in terminal by launching it from Spotlight by hitting `Command + Spacebar` and typing `Terminal` and then return.  To connect to the teaching cluster enter the command `ssh pawprint@clark.rnet.missouri.edu` where `pawprint` is your login (SSO) and enter your password when prompted.
+
 
