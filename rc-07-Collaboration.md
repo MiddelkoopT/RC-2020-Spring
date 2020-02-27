@@ -49,8 +49,12 @@ and/or developers, which is strong indicator of the works impact.
 
 
 ## Reading
+
+Required Reading
 * Git-Pro Chapter 3 (Git Branching): https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
 
+Additional Reading
+* "A successful Git branching model": https://nvie.com/posts/a-successful-git-branching-model/
 
 ## Git Workflow
 
