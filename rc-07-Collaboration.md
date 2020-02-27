@@ -44,7 +44,8 @@ possible complexity of managing that is in "production."  A software
 that is "production" means that it has a healthy community of users
 and/or developers, which is strong indicator of the works impact.
 
-[![Network of git branches for development and production](resources/Git-branching-model.png "Git Branching")*Complex Software Coordination in Git*][https://nvie.com/posts/a-successful-git-branching-model/]
+[![Network of git branches for development and production](resources/Git-branching-model.png "Git Branching")*Complex Software Coordination in Git*](http://nvie.com/posts/a-successful-git-branching-model/)
+
 
 
 ## Reading
