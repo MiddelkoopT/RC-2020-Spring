@@ -37,6 +37,16 @@ project management, collaboration, and source code management
 capabilities that have been widely adopted.  In this section we
 explore the use of git and GitLab for this collaboration.
 
+Large research and software projects can involve many people
+simultaneously over many years and multiple locations and institutions
+with people coming and going.  The next diagram demonstrates the
+possible complexity of managing that is in "production."  A software
+that is "production" means that it has a healthy community of users
+and/or developers, which is strong indicator of the works impact.
+
+[![Network of git branches for development and production](resources/Git-branching-model.png "Git Branching")*Complex Software Coordination in Git*][https://nvie.com/posts/a-successful-git-branching-model/]
+
+
 ## Reading
 * Git-Pro Chapter 3 (Git Branching): https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
 
