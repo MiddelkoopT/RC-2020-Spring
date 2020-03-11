@@ -47,7 +47,6 @@ and/or developers, which is strong indicator of the works impact.
 [![Network of git branches for development and production](resources/Git-branching-model.png "Git Branching")*Complex Software Coordination in Git*](http://nvie.com/posts/a-successful-git-branching-model/)
 
 
-
 ## Reading
 
 Required Reading
