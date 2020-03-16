@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+# Examples derived from
+# https://docs.python.org/3.7/library/xml.etree.elementtree.html#module-xml.etree.ElementTree
+# https://docs.python.org/3.7/library/csv.html#module-csv
+
 import xml.etree.ElementTree as xml
 import csv
 
@@ -14,6 +18,4 @@ with open('output.csv','w', newline='') as f:
     writer.writeheader()
     for r in root:
         writer.writerow({'tag':c.tag, 'text':r.text})
-
-
 
