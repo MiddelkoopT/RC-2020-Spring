@@ -2,3 +2,5 @@
 
 d <- read.csv('output.csv',header=TRUE)
 d
+
+mean(d$text)

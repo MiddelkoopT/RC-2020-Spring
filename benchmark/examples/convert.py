@@ -17,5 +17,7 @@ with open('output.csv','w', newline='') as f:
     writer = csv.DictWriter(f, delimiter=',', quotechar='"', fieldnames=['tag','text'])
     writer.writeheader()
     for r in root:
-        writer.writerow({'tag':c.tag, 'text':r.text})
+        writer.writerow({'tag':r.tag, 'text':r.text})
+
+
 
