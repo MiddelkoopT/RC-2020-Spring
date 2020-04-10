@@ -1,4 +1,4 @@
 #!/bin/bash
 
-rm -rf ./miniconda/
+rm -rf ./conda/
 
