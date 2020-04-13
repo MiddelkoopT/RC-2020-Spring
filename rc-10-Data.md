@@ -26,7 +26,7 @@ data.
   * See the "Database Example (chinook)" section on how to load the data.
   * Sections 1-10 (Simple Query - Transactions)
 * Software Carpentry - Databases and SQL http://swcarpentry.github.io/sql-novice-survey/
-  * See the "Hands On SQLite3" section on how to load the databvase.
+  * See the "Hands-On SQLite3" section on how to load the databvase.
   * Section 1-6 (Selecting Data, Sorting and Removing Duplicates,
     Filtering, Calculating New Values, Missing Data, and Aggregation).
 
@@ -59,7 +59,7 @@ is [JSON](http://www.json.org/).  Example:
 }
 ```
 
-## Accessing Data
+## Using Data
 
 ### Hands-On Python
 
@@ -106,7 +106,7 @@ To exit Python either press the `control-d` key or run the exit function.
 exit()
 ```
 
-### Hands On Julia
+### Hands-On Julia
 
 [Julia](https://docs.julialang.org) is an Open Source
 scientific/engineering language loosely based on Matlab but
@@ -257,7 +257,7 @@ up).
      `exercise-10-3/realworld.md` to your git class assignment
      repository and push it to your class repository.
 
-### References
+## References
  * ASCII https://en.wikipedia.org/wiki/ASCII
  * UTF-8/Unicode http://www.fileformat.info/info/charset/UTF-8/list.htm
  * JSON data format and specification http://www.json.org/
