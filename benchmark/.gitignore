@@ -1,1 +1,4 @@
 /data/
+/R/
+*.out
+/build/
