@@ -1,15 +1,3 @@
-#!/usr/bin/python3
-
-import sys
-import xml.etree.ElementTree as xml
-import csv
-import json
-
-## Example top 500 data
-ns = { 'top500': 'http://www.top500.org/xml/top500/1.0'}
-config = None
-
-"""
 <top500:list xmlns:top500="http://www.top500.org/xml/top500/1.0" authors="Martin Meuer, Erich Strohmaier, Jack Dongarra, Horst D. Simon" date="2019/11/18">
   <top500:site>
     <top500:rank>1</top500:rank>
@@ -35,39 +23,4 @@ config = None
     <top500:area-of-installation>6</top500:area-of-installation>
     <top500:number-of-processors>2414592</top500:number-of-processors>
   </top500:site>
-"""
-
-def setColumn(row,site,attribute):
-    # store data in the row dictionary
-    row[attribute]=site.find("top500:%s" % attribute ,ns).text
-
-def main(columns):
-
-    tree = xml.parse(config['topdataxml'])
-    root = tree.getroot()
-
-    count=0
-    with open(config['topdatacsv'],'w', newline='') as f:
-        writer = csv.DictWriter(f, delimiter=',', quotechar='"', fieldnames=columns)
-        writer.writeheader()
-
-        # write out columns
-        for r in root:
-            count+=1
-            row={}
-            for a in columns:
-                setColumn(row,r,a)
-            writer.writerow(row)
-
-    return count
-
-if __name__=='__main__':
-    if len(sys.argv)!=2:
-        print("./preprocess.py JSON configfile not specified")
-        sys.exit(1)
-
-    with open(sys.argv[1]) as f:
-        config=json.load(f)
-    print(config['topdataxml'])
-    print(main(['rank','system-name','computer']))
-
+</top500:list>
