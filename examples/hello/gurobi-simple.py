@@ -21,6 +21,12 @@ x2=40
 
 from gurobipy import * 
 
+debug=True
+
+def log(message,isdebug=False):
+    if (debug and isdebug) or isdebug==False:
+        print('>',message)
+
 m = Model("simple")
 x1 = m.addVar(name="x1")
 x2 = m.addVar(name="x2")
@@ -38,4 +44,12 @@ m.optimize()
 print("Solution: %f" % (m.objVal,))
 for v in m.getVars():
     print("%s:%f" % (v.varName, v.x))
+
+#print(x1,x2,m.objVal)
+
+assert x1.x==0.0      ## bad optimal solution
+assert x2.x==40.0     ## bad optimal solution
+assert m.objVal==80   ## bad optimal solution
+
+log("Done: valid solution found")
 
