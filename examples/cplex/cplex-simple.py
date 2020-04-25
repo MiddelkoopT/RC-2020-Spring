@@ -47,7 +47,14 @@ m.linear_constraints.add(lin_expr = constraints,
                          rhs = rhs,
                          names = constraint_names)
 
+print("+++ Solving")
 m.solve()
 
-print("Solution")
+print("+++ Solution")
 print(m.solution.get_values())
+print(m.solution.get_objective_value())
+
+print("+++ Validate")
+assert [0,40.0]==m.solution.get_values()    ## Solution values failed.
+assert m.solution.get_objective_value()==80 ## Objective value failed.
+
