@@ -40,12 +40,12 @@ scaling existing ones.  The best approach is to do things deliberately
 and incrementally, which means starting small, testing often, and
 scaling slowly both in terms of code and data.
 
-One method for this is to use the 1,2,3 Go method, which can be expanded to 1:
+One method for this is to use the 1, 2, 3 Go method, which can be expanded to:
   1. Hello - get the technology working.
   2. Textbook Example - do something easy.
   3. Benchmark and Reference problems - resolve community problems.
 
-Only after this go and solve your original problem.
+Only after this go and solve your original problem (Go).
 
 This will provide a framework to test code and data alike in a
 sustainable way, making the use of techniques such as Test Driven
@@ -59,10 +59,10 @@ Required Reading:
  * A modern ‘Hello, World’ program needs more than just code:
    https://stackoverflow.blog/2020/03/05/a-modern-hello-world-program-needs-more-than-just-code/
 
+## Getting Started
 
-## Workflows
-
-Even before a workflow is created there are important prerequisites.
+Even before a workflow and a plan is created there are important
+prerequisites.  The following items need to be satisfied:
 
 1. A problem statement.  What research, engineering, or business
    question are you trying to answer.
@@ -80,8 +80,49 @@ Even before a workflow is created there are important prerequisites.
    tracked? How will the integrity of the data be assured (checksums,
    backups, etc).
 
-Once the these requirements have been met, then a workflow can be
-developed. A workflow in general consists of the following steps:
+## Components of Computational and Data Enabled Research
+
+Scientific workflows are only a small part of the entire research and
+discovery process.  The life-cycle for computational and data enabled
+research can be broken down in into a number of components.  Many
+people often forget that the computation is one of these components
+and that and all parts need to be considered. Hence, the first step is
+to develop an overview and plan based on the following components in
+rough order of development and consideration:
+
+1. Research plan
+   * problem statement
+   * system description
+2. A data management plan
+   * who
+   * what
+   * where
+3. Data to ingest
+   * benchmark data
+   * instrumentation
+   * simulation data (reproducible?)
+   * raw data
+4. Tools and process
+   * containers
+   * packages
+   * build and deploy tools (CI, CD)
+5. Automation
+   * reproduce
+   * verify
+6. Analysis and Simulation
+   * models
+   * code
+7. Results
+   * publish (articles, code, and data)
+   * collaboration
+   * community
+   * validation
+
+## Workflows
+
+Once the prerequisites have been met (Getting Started), then a
+workflow can be developed. A workflow in general consists of the
+following steps:
 
 1. Data Acquisition (Input)
    * Test Data (simple and known-good-solutions)
@@ -112,7 +153,7 @@ developed. A workflow in general consists of the following steps:
    * Visualization 
    * Report generation
 
-These steps utilize the following components:
+These steps utilize the following tools:
 1. A source code management system (git) to manage code.
 2. A project management system (gitlabs) to manage people and work.
 3. A data management system (may include a database) to manage data and metadata.
@@ -120,6 +161,25 @@ These steps utilize the following components:
 5. An information management system to coordinate everything (workflows).
 6. Documentation to help others understand, including yourself.
 7. Data visualization to see the data, the code, and the analysis in action.
+
+## Automation
+
+Workflows must be fully automated and easy to understand, develop,
+debug, and use.  The following is an outline of the steps and files often used in the process.
+
+ 0. Git clone.
+ 1. Envrionment.  Set location of system libraries and load modules. `modules.sh` `environment.sh`
+ 2. Setup. Build libraries software required for analysis and setup package managers (python envrionments, spack). `setup.sh`
+ 3. Download data. Transfer data and download public data-sets. `download.sh`
+ 4. Compile. Many codes require a build phase.  Build management tools like `make` should be used.`build.sh`
+ 5. Test. Run code unit tests (TDD). `test.sh`
+ 6. Run. Develop and test code. `run.sh`
+ 7. Verification. Run code verification tests. `verify.sh`
+ 8. Experiment Setup.  Setup experimental control (create folders, build jobfiles etc) and populate experiment to be run on cluster. `experiments.sh`
+ 9. Run analysis. Use jobfiles to spawn analysis codes. `sbatch jobfile.sh`
+ 10. Analize.  Collect results and perform summary analysis. `analyze.sh`
+ 11. Archive. Save project data and results for publication. `archive.sh`
+ 12. Clean up. Remove all temporary data, binaries, and libraries. `clean.sh`
 
 ## Example Workflow
 
