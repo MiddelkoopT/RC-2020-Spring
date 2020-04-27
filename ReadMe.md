@@ -57,3 +57,5 @@ A secure shell client (ssh) is required. The following ssh clients are recommend
 ## Readings
  * "OAC Vision & Blueprint: Overview and Computational Ecosystem" https://www.nsf.gov/cise/oac/vision/blueprint-2019/nsf-aci-blueprint-v10-508.pdf
  * Roofline Model: https://crd.lbl.gov/departments/computer-science/PAR/research/roofline/ 
+ * Test Driven Development (TDD) http://www.agiledata.org/essays/tdd.html
+ * Test Driven Development: By Example by Kent Beck, Addison-Wesley, 2003. https://www.safaribooksonline.com/library/view/test-driven-development/0321146530 (available via MU library)
