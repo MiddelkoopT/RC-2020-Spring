@@ -2,6 +2,8 @@
 
 *IMSE 8410 Advanced Computational Systems and Data Engineering*
 
+DOI: 10.5281/zenodo.4383211
+
 Material Copyright 2017-2020 by Timothy Middelkoop. 
 Source code licensed under the Apache License, Version 2.0. 
 Documentation licensed under CC by SA 3.0.
